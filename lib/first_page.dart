@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_vocabulary_app/homepage.dart';
+import 'package:learn_vocabulary_app/chooose_page.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({super.key});
@@ -32,7 +32,7 @@ class _FirstPageState extends State<FirstPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomePage(word: wordController.text),
+                    builder: (context) => ChoosePage(word: wordController.text),
                   ),
                 );
               },
